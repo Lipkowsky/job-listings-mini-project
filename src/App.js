@@ -24,7 +24,7 @@ const FilterTag = ({ filter, onDelete }) => (
     </div>
     <div
       onClick={() => onDelete(filter)}
-      className="flex-grow h-8 rounded-tr-md rounded-br-md flex cursor-pointer items-center justify-center bg-desaturated-dark-cyan text-white px-3"
+      className="flex-grow h-8 rounded-tr-md rounded-br-md flex cursor-pointer items-center justify-center hover:bg-very-dark-grayish-cyan bg-desaturated-dark-cyan text-white px-3"
     >
       <span className="text-[0.7rem] font-bold">X</span>
     </div>
@@ -32,11 +32,11 @@ const FilterTag = ({ filter, onDelete }) => (
 );
 
 const FilterBar = ({ filters, onDeleteFilter, onClearFilters }) => (
-  <div className="absolute top-[17vh] md:mx-32 mx-4 rounded shadow-2xl pl-5 left-0 right-0 z-10 bg-white grid grid-cols-[4fr_1fr] items-center py-2 ">
+  <div className="absolute top-[17vh] md:mx-32 mx-4 rounded shadow-2xl pl-5 left-0 right-0 z-10 bg-white grid grid-cols-[4fr_1fr] items-center pt-1 ">
     <div className="flex flex-wrap gap-5 w-full items-center min-h-16 max-h-24 overflow-y-auto">
-      {filters.map((filter, index) => (
+      {filters.length > 0 ? filters.map((filter, index) => (
         <FilterTag key={index} filter={filter} onDelete={onDeleteFilter} />
-      ))}
+      )) : <span className="text-[1rem] uppercase font-bold text-desaturated-dark-cyan tracking-widest">Select tags to filter </span>}
     </div>
     <div onClick={onClearFilters} className="md:ml-auto cursor-pointer md:mr-10">
       <span className="text-desaturated-dark-cyan underline">Clear</span>
