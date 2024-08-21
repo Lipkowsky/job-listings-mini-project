@@ -1,0 +1,8 @@
+.item-separator::after {
+  content: "•";
+  margin: 0 0.8rem; 
+}
+
+.item-separator:last-child::after {
+  content: ""; 
+}
