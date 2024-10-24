@@ -64,7 +64,7 @@ const JobItem = ({ job, setFilters, filters }) => {
   return (
     <div className="bg-white grid grid-cols-[5px__1fr]">
       <div className="border-desaturated-dark-cyan h-full border bg-desaturated-dark-cyan rounded-tl-xl rounded-bl-xl"></div>
-      <div className="rounded shadow-2xl grid grid-rows-[1fr, max-content, 1fr] grid-cols-1 lg:grid-cols-2 xl:grid-rows-1 pt-6 pb-4">
+      <div className="rounded shadow-2xl grid grid-rows-[1fr, max-content, 1fr] grid-cols-1 lg:grid-cols-2  pt-6 pb-4">
         <div className="flex relative md:static pb-4">
           <div className="md:pl-4 pl-2 md:py-4 flex md:flex-cols">
             <img
