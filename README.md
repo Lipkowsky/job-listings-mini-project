@@ -13,4 +13,6 @@ Aplikacja dostępna lokalnie pod adresem [http://localhost:3000](http://localhos
 ### Zrzuty ekranu z aplikacji
 ![Strona główna - desktop](public/images/desktop_main2.png)
 ![Wykorzystanie filtrów - desktop](public/images/filter_used.png)
+![Strona główna - mobile](public/images/mobile_main.png)
+![Wykorzystanie filtrów - mobile](public/images/mobile_filters.png)
 
